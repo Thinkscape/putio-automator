@@ -14,7 +14,8 @@ import time
 from putio_automator.cli import cli
 from putio_automator.db import with_db
 
-from watchdog.observers import Observer
+# from watchdog.observers import Observer
+from watchdog.observers.polling import PollingObserver as Observer
 from watchdog.events import FileSystemEventHandler
 
 
